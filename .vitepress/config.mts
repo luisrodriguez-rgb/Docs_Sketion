@@ -169,7 +169,7 @@ export default defineConfig({
 
   // 2. Head Tags (Favicon & Open Graph metadata)
   head: [
-    ["link", { rel: "icon", href: "/85.png" }],
+    ["link", { rel: "icon", type: "image/png", href: "/85.png" }],
     ["meta", { name: "theme-color", content: "#121214" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:title", content: "Sketion Docs" }],
