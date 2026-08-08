@@ -1,0 +1,88 @@
+/* Import Google Fonts (Outfit & Inter) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap');
+
+:root {
+  --vp-font-family-base: 'Inter', sans-serif;
+  --vp-font-family-mono: monospace;
+  --vp-font-family-headings: 'Outfit', sans-serif;
+
+  /* Brand colors for light theme */
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #1d4ed8;
+  --vp-c-brand-3: #1e40af;
+  --vp-c-brand-soft: rgba(37, 99, 235, 0.08);
+}
+
+/* Custom dark theme colors */
+.dark {
+  --vp-c-brand-1: #3b82f6;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1d4ed8;
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.12);
+
+  --vp-c-bg: #121214;
+  --vp-c-bg-alt: #161619;
+  --vp-c-bg-elv: #1e1e24;
+
+  --vp-c-text-1: #f1f5f9;
+  --vp-c-text-2: #94a3b8;
+  --vp-c-text-3: #64748b;
+
+  --vp-c-border: #2e2e33;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--vp-font-family-headings);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Insignias de estado (badges) */
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-right: 6px;
+  font-family: var(--vp-font-family-headings);
+  vertical-align: middle;
+}
+.badge-available {
+  background-color: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+.badge-beta {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+.badge-coming-soon {
+  background-color: rgba(100, 116, 139, 0.12);
+  color: #cbd5e1;
+  border: 1px solid rgba(100, 116, 139, 0.25);
+}
+
+/* Workflows styling */
+.workflow-step {
+  border: 1px solid var(--vp-c-border);
+  background-color: var(--vp-c-bg-alt);
+  padding: 16px;
+  border-radius: 8px;
+  margin: 12px 0;
+  font-family: var(--vp-font-family-base);
+}
+.dark .workflow-step {
+  background-color: #161619;
+  border-color: #2e2e33;
+}
+
+/* Recortar el margen blanco de la imagen del logo en el navbar */
+.VPNavBarTitle .logo {
+  clip-path: inset(14% 14% 14% 14% round 24%);
+  transform: scale(1.4);
+  margin-right: 14px;
+}
+
