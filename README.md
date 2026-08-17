@@ -67,15 +67,15 @@ Para añadir una traducción o una nueva página traducida:
 
 ---
 
-## Procesamiento del Logo de Documentación
+## Identidad Visual y Recursos de Marca
 
-Si deseas actualizar o volver a recortar la imagen de marca de la documentación (`docs/public/85.png`):
-1. Asegúrate de tener instalada la librería Pillow:
-   ```bash
-   pip3 install pillow
-   ```
-2. Ejecuta el script de procesamiento:
-   ```bash
-   python3 crop_logo.py
-   ```
-El script recortará automáticamente los bordes sobrantes de la imagen y reemplazará los píxeles de las esquinas blancas por fondos transparentes (`RGBA`) para que el icono se integre de forma nativa en la barra superior y lateral del portal.
+Los recursos vectoriales e imágenes oficiales de Sketion se encuentran en el directorio `public/`:
+* `public/Sketion_blaco.svg`: Logotipo oficial vectorial utilizado en la barra de navegación, favicon y Open Graph de la documentación.
+* `public/Sketion_negro.svg`: Variante del logotipo con fondo oscuro y trazos claros.
+* `public/Sketion_principal.svg`: Isotipo principal con paleta de gradientes y detalles de interfaz.
+
+### Configuración en VitePress
+La configuración del logo, favicon e imagen Open Graph se gestiona en `.vitepress/config.mts`:
+- **Logo del Navbar**: Configurado en `themeConfig.logo: "/Sketion_blaco.svg"`.
+- **Favicon**: Enlace en cabecera con `rel="icon"` apuntando a `/Sketion_blaco.svg`.
+- **Hero Image**: Configurado en el frontmatter de `index.md` y `en/index.md`.

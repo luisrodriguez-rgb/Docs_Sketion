@@ -5,6 +5,9 @@ hero:
   name: "Sketion Docs"
   text: "Visual Knowledge Workspace"
   tagline: "El espacio donde las ideas, los documentos y el diseño se transforman en conocimiento visual estructurado."
+  image:
+    src: /Sketion_blaco.svg
+    alt: Sketion Logo
   actions:
     - theme: brand
       text: Empezar Guía

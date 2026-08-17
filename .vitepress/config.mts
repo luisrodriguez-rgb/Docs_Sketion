@@ -10,7 +10,7 @@ export default defineConfig({
       label: "Español",
       lang: "es",
       themeConfig: {
-        logo: "/85.png",
+        logo: "/Sketion_blaco.svg",
         nav: [
           { text: "Guías", link: "/getting-started/what-is-sketion" },
           { text: "Flujos de Trabajo", link: "/workflows/studying" },
@@ -90,7 +90,7 @@ export default defineConfig({
       lang: "en",
       link: "/en/",
       themeConfig: {
-        logo: "/85.png",
+        logo: "/Sketion_blaco.svg",
         nav: [
           { text: "Guides", link: "/en/getting-started/what-is-sketion" },
           { text: "Workflows", link: "/en/workflows/studying" },
@@ -169,12 +169,12 @@ export default defineConfig({
 
   // 2. Head Tags (Favicon & Open Graph metadata)
   head: [
-    ["link", { rel: "icon", type: "image/png", href: "/85.png" }],
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/Sketion_blaco.svg" }],
     ["meta", { name: "theme-color", content: "#121214" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:title", content: "Sketion Docs" }],
     ["meta", { property: "og:description", content: "Visual Knowledge Workspace para estudiantes e ingenieros" }],
-    ["meta", { property: "og:image", content: "/83.png" }],
+    ["meta", { property: "og:image", content: "/Sketion_blaco.svg" }],
     ["meta", { name: "twitter:card", content: "summary_large_image" }]
   ],
 

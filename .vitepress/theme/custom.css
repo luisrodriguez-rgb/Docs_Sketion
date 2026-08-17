@@ -79,10 +79,22 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #2e2e33;
 }
 
-/* Recortar el margen blanco de la imagen del logo en el navbar */
+/* Estilos para el logo vectorial en el navbar y hero */
 .VPNavBarTitle .logo {
-  clip-path: inset(14% 14% 14% 14% round 24%);
-  transform: scale(1.4);
-  margin-right: 14px;
+  border-radius: 6px;
+  margin-right: 8px;
+  height: 28px;
+}
+
+.VPHero .image-src {
+  border-radius: 20px;
+  max-height: 260px;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.25));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.VPHero .image-src:hover {
+  transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 20px 35px rgba(37, 99, 235, 0.3));
 }
 

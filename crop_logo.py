@@ -1,10 +1,14 @@
 # Para ejecutar este script, instala primero la librería Pillow en tu terminal:
 # pip3 install pillow
 
+import os
 from PIL import Image
 
-image_path = "/Users/leonfeliperodriguez/Desktop/Trabajos/SKETION/My-Excalidraw/docs/public/85.png"
-img = Image.open(image_path)
+image_path = os.path.join(os.path.dirname(__file__), "public", "Sketion_secundario.png")
+if os.path.exists(image_path):
+    img = Image.open(image_path)
+else:
+    img = None
 
 # Convert to RGBA
 img = img.convert("RGBA")
